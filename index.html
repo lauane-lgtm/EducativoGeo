@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Espaço Educativo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            📚 Espaço Educativo
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#atividades">Atividades</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <h1>
+                Materiais e atividades
+                para professores
+            </h1>
+
+            <p>
+                Encontre atividades, avaliações,
+                exercícios e materiais educativos
+                para utilizar em suas aulas.
+            </p>
+
+            <a href="#atividades" class="botao">
+                Ver atividades
+            </a>
+
+        </section>
+
+
+        <section class="pesquisa">
+
+            <input
+                type="text"
+                id="campoPesquisa"
+                placeholder="🔎 Pesquisar atividade..."
+            >
+
+        </section>
+
+
+        <section id="atividades">
+
+            <h2>📚 Atividades disponíveis</h2>
+
+            <div class="filtros">
+
+                <button onclick="filtrar('todos')">
+                    Todas
+                </button>
+
+                <button onclick="filtrar('geografia')">
+                    🌎 Geografia
+                </button>
+
+                <button onclick="filtrar('portugues')">
+                    📖 Português
+                </button>
+
+                <button onclick="filtrar('avaliacao')">
+                    📝 Avaliações
+                </button>
+
+            </div>
+
+
+            <div id="listaAtividades" class="lista">
+
+                <article
+                    class="card"
+                    data-categoria="geografia"
+                >
+
+                    <div class="icone">
+                        🌎
+                    </div>
+
+                    <h3>
+                        Sistema Solar
+                    </h3>
+
+                    <p>
+                        Atividade sobre o Sistema Solar
+                        com proposta de construção
+                        de maquete.
+                    </p>
+
+                    <span>
+                        Geografia
+                    </span>
+
+                    <a
+                        href="materiais/sistema-solar.pdf"
+                        download
+                        class="download"
+                    >
+                        ⬇ Baixar atividade
+                    </a>
+
+                </article>
+
+
+                <article
+                    class="card"
+                    data-categoria="geografia"
+                >
+
+                    <div class="icone">
+                        🌏
+                    </div>
+
+                    <h3>
+                        Ásia
+                    </h3>
+
+                    <p>
+                        Atividade de revisão sobre
+                        os aspectos geográficos da Ásia.
+                    </p>
+
+                    <span>
+                        Geografia
+                    </span>
+
+                    <a
+                        href="materiais/atividade-asia.pdf"
+                        download
+                        class="download"
+                    >
+                        ⬇ Baixar atividade
+                    </a>
+
+                </article>
+
+
+                <article
+                    class="card"
+                    data-categoria="avaliacao"
+                >
+
+                    <div class="icone">
+                        📝
+                    </div>
+
+                    <h3>
+                        Avaliação de Geografia
+                    </h3>
+
+                    <p>
+                        Avaliação pronta para aplicação
+                        em sala de aula.
+                    </p>
+
+                    <span>
+                        Avaliação
+                    </span>
+
+                    <a
+                        href="materiais/avaliacao-geografia.pdf"
+                        download
+                        class="download"
+                    >
+                        ⬇ Baixar avaliação
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="sobre" class="sobre">
+
+            <h2>Sobre o projeto</h2>
+
+            <p>
+                Este espaço foi criado para compartilhar
+                atividades e materiais educativos
+                desenvolvidos para facilitar o trabalho
+                de professores em sala de aula.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Espaço Educativo
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
